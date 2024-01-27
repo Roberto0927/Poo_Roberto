@@ -9,10 +9,10 @@ public class CLI {
         System.out.println("Hola Persona");
         System.out.println("********************");
         System.out.println("Elige una opción");
-        System.out.println("a. Calculo de masa corporal");
-        System.out.println("b. ");
-        System.out.println("c. Calculo de metabolismo basal.");
-        System.out.println("d. Salir");
+        System.out.println("1. Calculo de masa corporal");
+        System.out.println("2. ");
+        System.out.println("3. Calculo de metabolismo basal.");
+        System.out.println("4. Salir");
     }
     public static void launchApp(){
         Scanner scanner = new Scanner(System.in);
@@ -35,6 +35,3 @@ public class CLI {
       }
     }
 }
-/**
- * Pull request
- */
