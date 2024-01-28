@@ -18,8 +18,7 @@ public class CalculadoraMasaCorporal {
     /**
      * Aqui le pido su peso en kg y la estatura en cm para despues convertir la estatura de cm a metros
      */
-    class CalculadoraIMC {
-        public void calcular(Scanner scanner) {
+        public void CalculadoraIndiceMasaCorporal(Scanner scanner) {
             System.out.print("Ingrese el peso en kg: ");
             double peso = scanner.nextDouble();
 
@@ -50,69 +49,4 @@ public class CalculadoraMasaCorporal {
         }
     }
 
-    class CalculadoraMasaCorporalMagra {
-        /**
-         * Aqui le pido al paciente un dato mas que seria el sexo debido a que el cálculo es diferenre segun
-         * el peso
-         *
-         * @param scanner
-         */
-        public void calcular(Scanner scanner) {
-            System.out.print("Ingrese el peso en kg: ");
-            double peso = scanner.nextDouble();
 
-            System.out.print("Ingrese la estatura en cm: ");
-            double estatura = scanner.nextDouble();
-
-            System.out.print("Ingrese el sexo (M/F): ");
-            char sexo = scanner.next().charAt(0);
-
-            double masaCorporalMagra;
-
-            if (sexo == 'M' || sexo == 'm') {
-                masaCorporalMagra = (1.10 * peso) - 128 * (Math.pow(peso, 2) / Math.pow(estatura, 2));
-            } else if (sexo == 'F' || sexo == 'f') {
-                masaCorporalMagra = (1.07 * peso) - 148 * (Math.pow(peso, 2) / Math.pow(estatura, 2));
-            } else {
-                System.out.println("Respuesta no válida || Use M || O use F");
-                return;
-            }
-
-            System.out.println("Masa corporal magra calculada: " + masaCorporalMagra + " kg");
-        }
-    }
-
-    /**
-     * Aqui ademas de los datos anteriores le pido al paciente su edad para el cálculo
-     */
-    class CalculadoraMetabolismoBasal {
-        public void calcular(Scanner scanner) {
-            System.out.print("Ingrese el peso en kg ");
-            double peso = scanner.nextDouble();
-
-            System.out.print("Ingrese la estatura en cm ");
-            double estatura = scanner.nextDouble();
-
-            System.out.print("Ingrese la edad ");
-            int edad = scanner.nextInt();
-
-            System.out.print("Ingrese el sexo (M/F) ");
-            char sexo = scanner.next().charAt(0);
-
-            double metabolismoBasal;
-            /**
-             * Aqui depende de la edad del paciente y su sexo se hacen los cálculos
-             */
-            if (sexo == 'M' || sexo == 'm') {
-                metabolismoBasal = 66.5 + (13.75 * peso) + (5.003 * estatura) - (6.775 * edad);
-            } else if (sexo == 'F' || sexo == 'f') {
-                metabolismoBasal = 655.1 + (9.563 * peso) + (1.85 * estatura) - (4.676 * edad);
-            } else {
-                System.out.println("Sexo no válido. Use M para masculino o F para femenino.");
-                return;
-            }
-
-            System.out.println("Metabolismo basal calculado: " + metabolismoBasal + " kcal al día");
-        }
-    }
-}

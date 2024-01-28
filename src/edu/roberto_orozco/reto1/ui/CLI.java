@@ -1,5 +1,8 @@
 package edu.roberto_orozco.reto1.ui;
 
+import edu.roberto_orozco.reto1.process.CalculadoraMasaCorporal;
+import edu.roberto_orozco.reto1.process.CalculadoraMasaCorporalMagra;
+import edu.roberto_orozco.reto1.process.CalculadoraMetabolismoBasal;
 import java.util.Scanner;
 
 public class CLI {
@@ -8,7 +11,7 @@ public class CLI {
         Scanner scanner = new Scanner(System.in);
 
         /**
-         * Aqui le pregunto al paciente que le gustaria calcular usando numeros para que sea mas intuitivo
+         * Aquí le pregunto al paciente qué le gustaría calcular usando números para que sea más intuitivo.
          */
         while (true) {
             System.out.println("Menú:");
@@ -24,13 +27,13 @@ public class CLI {
 
             switch (opcion) {
                 case 1:
-                    new CalculadoraIMC().calcular(scanner);
+                    new CalculadoraMasaCorporal().CalculadoraIndiceMasaCorporal(scanner);
                     break;
                 case 2:
-                    new CalculadoraMasaCorporalMagra().calcular(scanner);
+                    new CalculadoraMasaCorporalMagra().Calcular(scanner);
                     break;
                 case 3:
-                    new CalculadoraMetabolismoBasal().calcular(scanner);
+                    new CalculadoraMasaCorporalMagra().Calcular(scanner);
                     break;
                 case 4:
                     System.out.println("Adiós, vuelva pronto");
