@@ -1,18 +1,25 @@
 package edu.roberto_orozco.reto2.Cajas.process;
 
 import java.util.Scanner;
+
 public class CompraDeCajas {
-    public void CompradeCajas(Scanner scanner){
-        System.out.println("ingrese la cantidad de cajas a comprar");
-        double cantidadCompra = scanner.nextDouble();
+    private double cantidadCompra;
+    private double valorCompra;
 
-        System.out.println("Ingrese el valor de las cajas");
-        double valorCompra = scanner.nextDouble();
+    public void realizarCompra(Scanner scanner) {
+        System.out.println("Ingrese la cantidad de cajas a comprar:");
+        cantidadCompra = scanner.nextDouble();
 
-        double compraTotal =cantidadCompra*valorCompra;
+        System.out.println("Ingrese el valor de las cajas:");
+        valorCompra = scanner.nextDouble();
+    }
 
-        System.out.println("La venta realizada por" + cantidadCompra +
-                "cajas al precio de" + valorCompra + "es igual a" + compraTotal);
+    public double getCantidadCompra() {
+        return cantidadCompra;
+    }
+
+    public double getValorCompra() {
+        return valorCompra;
 
     }
 }

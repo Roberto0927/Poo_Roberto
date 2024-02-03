@@ -29,13 +29,13 @@ public class CLI {
 
             switch (opcion) {
                 case 1:
-                    new CompraDeCajas().CompradeCajas(scanner);
+                    new CompraDeCajas().realizarCompra(scanner);
                     break;
                 case 2:
                     new VentaDeCajas().VentadeCajas(scanner);
                     break;
                 case 3:
-                    new Reporte().ReporteFinal(scanner);
+                    new Reporte().reporteFinal(scanner);
                     break;
                 case 4:
                     System.out.println("Adiós, vuelva pronto");
