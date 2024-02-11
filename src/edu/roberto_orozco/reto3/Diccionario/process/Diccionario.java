@@ -57,7 +57,9 @@ public class Diccionario {
         System.out.println("Cantidad de palabras en el diccionario: " + cantidadPalabras);
         System.out.println("Detalles:");
         for (int i = 0; i < cantidadPalabras; i++) {
-            System.out.println(palabras[i] + " - Longitud: " + palabras[i].length() + ", Significado: " + significados[i].length());
+            int longitudPalabra = palabras[i].length();
+            int longitudSignificado = significados[i].length();
+            System.out.println(palabras[i] + " - Longitud: " + longitudPalabra + ", Significado: " + longitudSignificado);
         }
     }
 }
