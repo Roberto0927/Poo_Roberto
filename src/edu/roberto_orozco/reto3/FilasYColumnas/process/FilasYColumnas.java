@@ -2,6 +2,10 @@ package edu.roberto_orozco.reto3.FilasYColumnas.process;
 
 import java.util.Random;
 
+/**
+ * En esta clase se esta generando la matriz con números aleatorios con la cantidad de filas y columnas
+ * que el usuario haya ingresado
+ */
 public class FilasYColumnas {
     public static int[][] generarMatriz(int filas, int columnas) {
         Random random = new Random();
@@ -14,6 +18,11 @@ public class FilasYColumnas {
         return matriz;
     }
 
+    /**
+     * En este metodo se esta contando la cantidad de pares e impares de cada columna e imprimiendo
+     * el conteo de filas y columnas
+     * * @param matriz
+     */
     public static void contarParesImpares(int[][] matriz) {
         int filas = matriz.length;
         int columnas = matriz[0].length;

@@ -3,6 +3,10 @@ package edu.roberto_orozco.reto3.FilasYColumnas.ui;
 import java.util.Scanner;
 import edu.roberto_orozco.reto3.FilasYColumnas.process.FilasYColumnas;
 
+/**
+ * en esta clase de le pedirá al usuario que ingrese la cantidad de filas y columnas a imprimir para despues
+ * generar una matriz
+ */
 public class CLI {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

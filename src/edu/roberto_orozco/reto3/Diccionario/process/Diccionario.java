@@ -5,6 +5,9 @@ public class Diccionario {
     private String[] significados;
     private int cantidadPalabras;
 
+    /**
+     * En esta seccion tenemos las 10 palabras declaradas ligadas a su significado
+     */
     public Diccionario() {
         palabras = new String[10];
         significados = new String[10];
@@ -32,6 +35,9 @@ public class Diccionario {
         }
     }
 
+    /**
+     * Aqui imprimimos la lista de palabras
+     */
     public void listarPalabras() {
         System.out.println("Palabras en el diccionario:");
         for (int i = 0; i < cantidadPalabras; i++) {
@@ -39,6 +45,11 @@ public class Diccionario {
         }
     }
 
+    /**
+     * Aqui imprime la palabra y su significado y en caso de no estar imprime: la palabra "la que ingrese el usuario"
+     * no eciste en el diccionario
+     * @param palabra
+     */
     public void buscarPalabra(String palabra) {
         boolean encontrada = false;
         for (int i = 0; i < cantidadPalabras; i++) {
@@ -53,6 +64,10 @@ public class Diccionario {
         }
     }
 
+    /**
+     * Aqui se imprime la cantidad de palabras en el diccionario con su longitud de caracteres y la longitud de
+     * caracteres de su significado
+     */
     public void detalleDiccionario() {
         System.out.println("Cantidad de palabras en el diccionario: " + cantidadPalabras);
         System.out.println("Detalles:");

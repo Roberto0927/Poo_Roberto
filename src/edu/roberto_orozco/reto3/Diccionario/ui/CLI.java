@@ -19,6 +19,9 @@ public class CLI {
         scanner.close();
     }
 
+    /**
+     * Aqui se le muestra al usuario sus 4 opciones a elegir
+     */
     private static void mostrarMenu() {
         System.out.println("------Diccionario------:");
         System.out.println("A. Enlistar palabras del diccionario");
@@ -28,6 +31,10 @@ public class CLI {
         System.out.print("Seleccione una opción: ");
     }
 
+    /**
+     * Aqui depende de la eleccion del usuario se manda a llamar un metodo distinto de la clase diccionario
+     * @param opcion
+     */
     private static void procesarOpcion(String opcion) {
         switch (opcion.toUpperCase()) {
             case "A":
@@ -47,6 +54,9 @@ public class CLI {
         }
     }
 
+    /**
+     * Aqui se le pide al usuario en caso de elegir la opcion B ingresar la palabra que desea buscar
+     */
     private static void buscarPalabra() {
         System.out.print("Ingrese la palabra que desea buscar: ");
         String palabra = scanner.next();
