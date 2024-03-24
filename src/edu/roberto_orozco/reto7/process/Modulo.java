@@ -3,10 +3,10 @@ package edu.roberto_orozco.reto7.process;
 /**
  * Clase para obtener el modulo de una division
  */
-public class Modulo extends OperacionAritmetica{
+public class Modulo extends Resta{
 
     /**
-     * Metodo para calcular la multiplicacion
+     * Metodo extendido de la clase Resta para calcular la multiplicación
      */
     @Override
     public double calcular(double n1, double n2) {
