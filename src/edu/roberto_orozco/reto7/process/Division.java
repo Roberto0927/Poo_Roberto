@@ -3,10 +3,10 @@ package edu.roberto_orozco.reto7.process;
 /**
  * Clase para obtener la division
  */
-public class Division extends OperacionAritmetica {
+public class Division extends Resta {
 
     /**
-     * Metodo para calcular la division
+     * Metodo extendido de la clase Resta para calcular la division
      */
     @Override
     public double calcular(double n1, double n2) {

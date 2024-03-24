@@ -7,7 +7,7 @@ package edu.roberto_orozco.reto7.process;
 public class Resta extends OperacionAritmetica {
 
     /**
-     * Metodo para calcular la resta
+     * Metodo extendido de la clase OperacionAritmetica para calcular la resta
      */
     @Override
     public double calcular(double n1, double n2) {
