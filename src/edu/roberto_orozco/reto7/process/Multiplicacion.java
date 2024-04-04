@@ -3,10 +3,10 @@ package edu.roberto_orozco.reto7.process;
 /**
  * Clase para obtener la multiplicación
  */
-public class Multiplicacion extends OperacionAritmetica{
+public class Multiplicacion extends Suma{
 
     /**
-     * Metodo para calcular la multiplicacion
+     * Metodo extendido de la clase Suma para calcular la multiplicación
      */
     @Override
     public double calcular(double n1, double n2) {
