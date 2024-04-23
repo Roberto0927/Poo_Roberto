@@ -14,5 +14,11 @@ public class Esp extends Idiomas{
         LIBRO5 = "El barril amontillado";
         ERROR_LIBRO = "Libro no disponible";
         ERROR = "Ocurrio un error inesperado";
+        TOTAL_VOCALES = "Total de vocales en el libro: ";
+        SITUACION_VOCALES = "Palabra(s) que comienzan con vocal, terminan con vocal y tienen al menos 5 letras: ";
+        PALABRAS_VOCAL = "Palabras que empiezan con vocal alfabeticamente: ";
+        PALABRAS_IMPAR = "Palabras que contienen un numero impar de letras: ";
+        PALABRA_LARGA = "La palabra mas larga es: ";
+        PALABRA_CORTA = "La palabra mas corta es: ";
     }
 }

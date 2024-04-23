@@ -14,5 +14,11 @@ public class Eng extends Idiomas{
         LIBRO5 = "The Amontillado Cask";
         ERROR_LIBRO = "Book not available";
         ERROR = "An unexpected error occurred";
+        TOTAL_VOCALES = "Total number of vowels in the book: ";
+        SITUACION_VOCALES = "Word(s) that start and end with a vowel and have at least 5 letters: ";
+        PALABRAS_VOCAL = "Words starting with a vowel alphabetically: ";
+        PALABRAS_IMPAR = "Words containing an odd number of letters: ";
+        PALABRA_LARGA = "The longest word is: ";
+        PALABRA_CORTA = "The shortest word is: ";
     }
 }
