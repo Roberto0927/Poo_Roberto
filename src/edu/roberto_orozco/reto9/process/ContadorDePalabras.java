@@ -15,11 +15,11 @@ public class ContadorDePalabras {
     private static final HashMap<String, String> librosDisponibles = new HashMap<>(); /** HashMap que almacena los libros disponibles**/
 
     static {
-        librosDisponibles.put("1", "src/edu/jesus_fdez/reto9/resource/libro1.txt");
-        librosDisponibles.put("2", "src/edu/jesus_fdez/reto9/resource/libro2.txt");
-        librosDisponibles.put("3", "src/edu/jesus_fdez/reto9/resource/libro3.txt");
-        librosDisponibles.put("4", "src/edu/jesus_fdez/reto9/resource/libro4.txt");
-        librosDisponibles.put("5", "src/edu/jesus_fdez/reto9/resource/libro5.txt");
+        librosDisponibles.put("1", "src/edu/roberto_orozco/reto9/resource/libro1.txt");
+        librosDisponibles.put("2", "src/edu/roberto_orozco/reto9/resource/libro2.txt");
+        librosDisponibles.put("3", "src/edu/roberto_orozco/reto9/resource/libro3.txt");
+        librosDisponibles.put("4", "src/edu/roberto_orozco/reto9/resource/libro4.txt");
+        librosDisponibles.put("5", "src/edu/roberto_orozco/reto9/resource/libro5.txt");
     }
 
 
