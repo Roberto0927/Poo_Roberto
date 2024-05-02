@@ -1,6 +1,8 @@
 package edu.roberto_orozco.reto9.ui;
-import java.util.Scanner;
+
 import edu.roberto_orozco.reto9.process.ContadorDePalabras;
+
+import java.util.Scanner;
 
 public class CLI {
     public static Idiomas idiomas = new Esp(); // Idioma por defecto al iniciar la aplicación
@@ -9,8 +11,8 @@ public class CLI {
         // Mostrar el menú para que el usuario elija el idioma
         System.out.println("------------------Idioma------------------" +
                 "\nDigite el idioma (Type the language)" +
-                "\n1- Español (Esp)" +
-                "\n2- English (Eng)" +
+                "\n1- Español (ESP)" +
+                "\n2- English (ENG)" +
                 "\n------------------------------------------");
     }
 
@@ -58,6 +60,6 @@ public class CLI {
                 System.out.println(Idiomas.ERROR_LIBRO); // Mostrar mensaje de error si el libro seleccionado no es válido
         }
 
-        ContadorDePalabras.setLibrosDisponibles(libroSeleccionado); // Llamar al método para contar las palabras del libro seleccionado
+        ContadorDePalabras.setLibrosDisponibles(libroSeleccionado);// Llamar al método para contar las palabras del libro seleccionado
     }
 }

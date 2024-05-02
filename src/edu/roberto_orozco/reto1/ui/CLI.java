@@ -33,7 +33,7 @@ public class CLI {
                     new CalculadoraMasaCorporalMagra().Calcular(scanner);
                     break;
                 case 3:
-                    new CalculadoraMasaCorporalMagra().Calcular(scanner);
+                    new CalculadoraMetabolismoBasal().Calcular(scanner);
                     break;
                 case 4:
                     System.out.println("Adiós, vuelva pronto");

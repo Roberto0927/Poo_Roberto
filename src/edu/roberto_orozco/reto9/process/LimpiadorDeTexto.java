@@ -5,20 +5,25 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class LimpiadorDeTexto {
-    // Método para obtener las palabras de un archivo de texto limpias de caracteres no alfabéticos
-    public static List<String> obtenerPalabras(String filePath){
+    /**
+     * Obtiene las palabras de un archivo de texto limpias de caracteres no alfabéticos.
+     *
+     * @param filePath La ruta del archivo de texto.
+     * @return Una lista de palabras limpias.
+     */
+    public static List<String> obtenerPalabras(String filePath) {
         List<String> palabras = new ArrayList<>();
-        try {
-            Scanner sc = new Scanner(new File(filePath)); // Crear un Scanner para leer el archivo
-            while (sc.hasNext()){ // Mientras haya una próxima palabra en el archivo
-                String palabra = sc.next().toLowerCase().replaceAll("[^a-zA-ZñÑ´¨]", ""); // Leer y limpiar la palabra
-                palabras.add(palabra); // Agregar la palabra al listado
-            }
-        } catch (FileNotFoundException e) { // Capturar la excepción en caso de que el archivo no sea encontrado
-            e.printStackTrace(); // Imprimir la traza de la excepción para depuración
+        try (Scanner sc = new Scanner(new File(filePath))) {
+            palabras = sc.tokens()
+                    .map(String::toLowerCase) /** Convertir todas las palabras a minúsculas**/
+                    .map(palabra -> palabra.replaceAll("[^a-zA-ZñÑ´¨]", "")) /** Limpiar la palabra de caracteres no alfabéticos**/
+                    .collect(Collectors.toList()); /** Recolectar las palabras limpias en una lista**/
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
-        return palabras; // Devolver la lista de palabras limpias
+        return palabras;
     }
 }
