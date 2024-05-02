@@ -1,9 +1,11 @@
 package edu.roberto_orozco.reto2.Cajas.ui;
 
-import java.util.Scanner;
 import edu.roberto_orozco.reto2.Cajas.process.CompraDeCajas;
 
-public class CLI {
+import java.util.Scanner;
+
+public class
+CLI {
     public static void showMenu() {
 
         Scanner scanner = new Scanner(System.in);
